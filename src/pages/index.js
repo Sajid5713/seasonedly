@@ -1,7 +1,14 @@
+import {Inter} from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
 export default function Home() {
-  console.log('render')
   return (
-    <div className="app overflow-hidden">
+    <div className='app overflow-hidden'>
       <main className="bg-[#101828]">
         <div className="container relative mx-auto flex-1 flex flex-col max-w-7xl lg:flex-row items-center justify-between px-8 py-20 sm:py-40">
           {/* Left Column (Text Content) */}
@@ -33,7 +40,7 @@ export default function Home() {
           </div>
 
           {/* Right Column (Large Half-Visible Image) */}
-          <div className="relative w-3xl mt-16 right-[-250px] lg:absolute lg:right-[-400px] lg:top-1/2 lg:-translate-y-1/2 lg:w-[800px] z-0 pointer-events-none">
+          <div className="relative w-3xl mt-16 right-[-250px] lg:absolute lg:right-[-400px] lg:top-1/2 lg:-translate-y-1/2 lg:w-[900px] z-0 pointer-events-none">
             <img
               src="/banner-image.png"
               alt="Banner Image"
@@ -44,7 +51,7 @@ export default function Home() {
         <section className="services">
             <div className="mx-auto container">
                 <div className="">
-                  <h3>Web Development</h3>
+                  <h2 className="text-white text-center font-semibold">The world’s most innovative companies use our app</h2>
                 </div>
             </div>
         </section>
