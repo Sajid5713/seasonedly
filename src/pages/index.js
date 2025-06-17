@@ -11,39 +11,17 @@ export default function Home() {
     <div className="app overflow-hidden">
       <main className="bg-[#101828]">
         <div className="relative">
-          <svg
-            viewBox="0 0 2500 1080"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-full absolute inset-0 z-[calc(10*-1)"
-          >
+          <svg viewBox="0 0 2500 1080" xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute inset-0 z-[calc(10*-1)">
             <defs>
-              <pattern
-                id="grid-pattern"
-                x="0"
-                y="0"
-                width="300"
-                height="300"
-                patternUnits="userSpaceOnUse"
-              >
-                <path
-                  d="M0 0 H300 M300 0 V300"
-                  stroke="oklab(1 0 0 / 0.2)"
-                  strokeWidth="1"
-                  fill="none"
-                />
+              <pattern id="grid-pattern" x="0" y="0" width="300" height="300" patternUnits="userSpaceOnUse">
+                <path d="M0 0 H300 M300 0 V300" stroke="oklab(1 0 0 / 0.2)" strokeWidth="1" fill="none"/>
               </pattern>
               <linearGradient id="fade-left" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="white" stopOpacity="0" />
                 <stop offset="20%" stopColor="white" stopOpacity="1" />
                 <stop offset="100%" stopColor="white" stopOpacity="1" />
               </linearGradient>
-              <linearGradient
-                id="fade-bottom"
-                x1="0%"
-                y1="0%"
-                x2="0%"
-                y2="100%"
-              >
+              <linearGradient id="fade-bottom" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="white" stopOpacity="1" />
                 <stop offset="60%" stopColor="white" stopOpacity="1" />
                 <stop offset="100%" stopColor="white" stopOpacity="0" />
@@ -54,15 +32,10 @@ export default function Home() {
                 <rect width="100%" height="100%" fill="url(#fade-bottom)" />
               </mask>{" "}
             </defs>
-
-            <rect
-              width="100%"
-              height="100%"
-              fill="url(#grid-pattern)"
-              mask="url(#fade-mask)"
-            />
+            <rect width="100%" height="100%" fill="url(#grid-pattern)" mask="url(#fade-mask)"/>
           </svg>
-          <div className="container relative mx-auto flex-1 flex flex-col max-w-7xl lg:flex-row items-center justify-between px-8 py-20 sm:py-40">
+
+          <div className="container relative mx-auto flex-1 flex flex-col max-w-7xl lg:flex-row items-center justify-between px-5 py-20 sm:py-40">
             {/* Left Column (Text Content) */}
             <div className="w-full lg:w-1/2 xl:w-1/2 z-1 lg:mr-8">
               <a href="#" className="flex items-center">
@@ -85,7 +58,7 @@ export default function Home() {
                   />
                 </svg>
               </a>
-              <h1 className="text-4xl mt-10 sm:text-5xl xl:text-6xl text-white font-semibold">
+              <h1 className="text-4xl mt-10 sm:text-5xl xl:text-6xl text-white font-bold">
                 Deploy to the cloud with confidence
               </h1>
               <p className="mt-8 text-[20px] text-[#99a1af] font-medium">
@@ -113,30 +86,31 @@ export default function Home() {
           </div>
         </div>
         {/* Companies Section */}
-        <section className="py-[110px]">
+        <section className="py-[110px] px-5">
           <div className="mx-auto container">
             <div className="text-center">
               <h2 className="text-white text-lg font-semibold">
                 The world’s most innovative companies use our app
               </h2>
             </div>
-            <div className="flex flex-col gap-16 items-center justify-center mt-16 sm:flex-row">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 justify-items-center mt-16 sm:flex-row">
               <img src="/statamic-logo-white.svg" alt="/" />
               <img src="/savvycal-logo-white.svg" alt="/" />
               <img src="/tuple-logo-white.svg" alt="/" />
               <img src="/reform-logo-white.svg" alt="/" />
               <img src="/transistor-logo-white.svg" alt="/" />
+              <img src="/transistor-logo-white.svg" alt="/" />
             </div>
           </div>
         </section>
         {/* Services Section */}
-        <section className="py-[110px]">
+        <section className="py-[110px] px-5">
           <div className="mx-auto container">
             <div className="text-center mx-auto max-w-2xl">
               <h2 className="font-semibold bg-[#b93826] inline-block px-5 py-1 rounded-b-3xl rounded-l-3xl text-gray-300">
                 Deploy faster
               </h2>
-              <p className="text-white text-5xl mt-3 font-bold">
+              <p className="text-white text-3xl sm:text-4xl md:text-5xl mt-3 font-bold">
                 Everything you need to deploy your app
               </p>
               <p className="mt-8 text-[20px] text-[#99a1af] font-medium">
@@ -144,7 +118,7 @@ export default function Home() {
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-16 mt-16 sm:flex-row">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-5 lg:gap-10 mt-16 sm:flex-row">
               <div className="w-full shadow-2xl shadow-gray-700 hover:shadow-none transition delay-100 duration-300 p-10 rounded-lg">
                 <svg
                   className="size-12 bg-[#b93826] rounded-lg p-2.5 text-gray-100 hover:text-gray-900"
@@ -176,7 +150,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="w-full shadow-2xl shadow-gray-700 hover:shadow-none transition delay-100 duration-300 p-10 rounded-lg">
-                <svg
+                <svg 
                   className="size-12 bg-[#b93826] rounded-lg p-2.5 text-gray-100 hover:text-gray-900"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -334,13 +308,13 @@ export default function Home() {
           </div>
         </section>
         {/* Banner Section */}
-        <section className="py-[110px]">
+        <section className="py-[110px] px-5">
           <div className="mx-auto container">
             <div className="text-center mx-auto max-w-2xl">
               <h2 className="font-semibold bg-[#b93826] inline-block px-5 py-1 rounded-b-3xl rounded-l-3xl text-gray-300">
                 Everything you need
               </h2>
-              <p className="text-white text-5xl mt-3 font-bold">
+              <p className="text-white text-3xl sm:text-4xl md:text-5xl mt-3 font-bold">
                 No server? No problem.
               </p>
               <p className="mt-8 text-[20px] text-[#99a1af] font-medium">
@@ -355,13 +329,13 @@ export default function Home() {
           </div>
         </section>
         {/* Track Record */}
-        <section className="py-[110px]">
+        <section className="py-[110px] px-5">
           <div className="mx-auto container">
             <div className="text-center text-left max-w-2xl">
               <h2 className="font-semibold bg-[#b93826] inline-block px-5 py-1 rounded-b-3xl rounded-l-3xl text-gray-300">
                 Our track record
               </h2>
-              <p className="text-white text-5xl mt-3 font-bold">
+              <p className="text-white text-3xl sm:text-4xl md:text-5xl mt-3 font-bold">
                 Trusted by thousands of creators worldwide
               </p>
               <p className="mt-8 text-[20px] text-[#99a1af] font-medium">
@@ -370,7 +344,7 @@ export default function Home() {
                 cupiditate blanditiis.
               </p>
             </div>
-            <div className="grid grid-cols-4 gap-8 py-10">
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 py-10">
               <div className="border border-l-gray-700 pl-6">
                 <h3 className="text-gray-100 text-4xl font-semibold mb-2.5">
                   8000+
@@ -399,39 +373,39 @@ export default function Home() {
           </div>
         </section>
         {/* Testimonial */}
-        <section className="py-[110px]">
+        <section className="py-[110px] px-5">
           <div className="mx-auto container">
             <div className="text-center mx-auto max-w-2xl">
               <h2 className='font-semibold bg-[#b93826] inline-block px-5 py-1 rounded-b-3xl rounded-l-3xl text-gray-300'>Testimonials</h2>
-              <p className="text-white text-5xl mt-3 font-bold">
+              <p className="text-white text-3xl sm:text-4xl md:text-5xl mt-3 font-bold">
                 We have worked with thousands of amazing people
               </p>
               <p className="mt-8 text-[20px] text-[#99a1af] font-medium">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.
               </p>
             </div>
-            <div className='grid grid-cols-4 grid-flow-col gap-10 mt-20'>
-                <figure className='shadow-lg border-1 border-gray-800 rounded-lg shadow-gray-700 col-start-2 col-span-2'>
-                  <blockquote className='p-12 '>
-                    <p className='text-gray-400 text-2xl'>“Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.</p>
+            <div className='grid md:grid-col-2 lg:grid-cols-4 lg:grid-flow-col gap-10 mt-20'>
+                <figure className='shadow-lg border-1 border-gray-800 rounded-lg shadow-gray-700 md:col-start-1 md:col-span-2 lg:col-start-2'>
+                  <blockquote className='p-6 sm:p-12 '>
+                    <p className='text-gray-400 text-lg sm:text-2xl'>“Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.</p>
                   </blockquote>
-                  <figcaption className='flex flex-nowrap gap-4 py-4 px-6 border-t border-gray-700'>
+                  <figcaption className='flex flex-nowrap justify-between gap-4 py-4 px-6 border-t border-gray-700'>
                     <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                     <div className='flex flex-col flex-auto'>
                       <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
                       <p className='text-gray-400 text-sm/2'>@adamsteller</p>
                     </div>
 
-                    <img src='/reform-logo-white.svg' alt='compnayLogo'/>
+                    <img className='w-28 object-contain' src='/reform-logo-white.svg' alt='compnayLogo'/>
                   </figcaption>
                 </figure>
                 <div className='contents'>
-                  <div className='row-span-2'>
-                    <figure className='shadow-lg rounded-lg border-1 mb-8 border-gray-800 shadow-gray-700 row-end-1 col-start-2 col-span-2'>
+                  <div className='lg:row-span-2'>
+                    <figure className='shadow-lg rounded-lg border-1 mb-10 border-gray-800 shadow-gray-700 lg:row-end-1 lg:col-start-2 lg:col-span-2'>
                       <blockquote className='p-6'>
                         <p className='text-gray-400 text-lg'>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</p>
                       </blockquote>
-                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6'>
+                      <figcaption className='flex flex-nowrap justify-between gap-8 py-4 px-6 border-t border-gray-700'>
                         <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                         <div className='flex flex-col'>
                           <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
@@ -439,11 +413,11 @@ export default function Home() {
                         </div>
                       </figcaption>
                     </figure>
-                    <figure className='shadow-lg rounded-lg border-1 mb-8 border-gray-800 shadow-gray-700 row-end-1 col-start-2 col-span-2'>
+                    <figure className='shadow-lg rounded-lg border-1 sm:mb-8 border-gray-800 shadow-gray-700 lg:row-end-1 lg:col-start-2 lg:col-span-2'>
                       <blockquote className='p-6'>
                         <p className='text-gray-400 text-lg'>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</p>
                       </blockquote>
-                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6'>
+                      <figcaption className='flex flex-nowrap justify-between gap-8 py-4 px-6 border-t border-gray-700'>
                         <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                         <div className='flex flex-col'>
                           <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
@@ -453,12 +427,12 @@ export default function Home() {
                     </figure>
                   </div>
                 </div>
-                <div className='col-start-4 row-span-2'>
-                   <figure className='shadow-lg rounded-lg border-1 mb-8 border-gray-800 shadow-gray-700 row-end-1 col-start-2 col-span-2'>
+                <div className='lg:col-start-4 lg:row-span-2'>
+                   <figure className='shadow-lg rounded-lg justify-between border-1 mb-10 border-gray-800 shadow-gray-700 lg:row-end-1 lg:col-start-2 lg:col-span-2'>
                       <blockquote className='p-6'>
                         <p className='text-gray-400 text-lg'>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</p>
                       </blockquote>
-                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6'>
+                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6 border-t border-gray-700'>
                         <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                         <div className='flex flex-col'>
                           <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
@@ -466,11 +440,11 @@ export default function Home() {
                         </div>
                       </figcaption>
                     </figure>
-                     <figure className='shadow-lg rounded-lg border-1 mb-8 border-gray-800 shadow-gray-700 row-end-1 col-start-2 col-span-2'>
+                     <figure className='shadow-lg rounded-lg border-1 sm:mb-8 border-gray-800 shadow-gray-700 lg:row-end-1 lg:col-start-2 lg:col-span-2'>
                       <blockquote className='p-6'>
                         <p className='text-gray-400 text-lg'>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</p>
                       </blockquote>
-                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6'>
+                      <figcaption className='flex flex-nowrap justify-between gap-8 py-4 px-6 border-t border-gray-700'>
                         <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                         <div className='flex flex-col'>
                           <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
@@ -479,12 +453,12 @@ export default function Home() {
                       </figcaption>
                     </figure>                  
                 </div>
-                <div className='col-start-2 row-span-1'>
-                   <figure className='shadow-lg rounded-lg border-1 mb-8 border-gray-800 shadow-gray-700 row-end-1 col-start-2 col-span-2'>
+                <div className='lg:col-start-2 lg:row-span-1'>
+                   <figure className='shadow-lg rounded-lg border-1 sm:mb-8 border-gray-800 shadow-gray-700 lg:row-end-1 lg:col-start-2 lg:col-span-2'>
                       <blockquote className='p-6'>
                         <p className='text-gray-400 text-lg'>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</p>
                       </blockquote>
-                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6'>
+                      <figcaption className='flex flex-nowrap justify-between gap-8 py-4 px-6 border-t border-gray-700'>
                         <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                         <div className='flex flex-col'>
                           <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
@@ -493,12 +467,12 @@ export default function Home() {
                       </figcaption>
                     </figure>
                 </div>
-                <div className='col-start-3 row-span-1'>
-                   <figure className='shadow-lg rounded-lg border-1 mb-8 border-gray-800 shadow-gray-700 row-end-1 col-start-2 col-span-2'>
+                <div className='lg:col-start-3 lg:row-span-1'>
+                   <figure className='shadow-lg rounded-lg border-1 sm:mb-8 border-gray-800 shadow-gray-700 lg:row-end-1 lg:col-start-2 lg:col-span-2'>
                       <blockquote className='p-6'>
                         <p className='text-gray-400 text-lg'>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.</p>
                       </blockquote>
-                      <figcaption className='flex flex-nowrap gap-8 py-4 px-6'>
+                      <figcaption className='flex flex-nowrap justify-between gap-8 py-4 px-6 border-t border-gray-700'>
                         <img className='size-10' src='/twitter.png' alt='testimonailIcon'/>
                         <div className='flex flex-col'>
                           <p className='text-gray-400 font-semibold mb-2.5'>Adam Steller</p>
@@ -513,7 +487,7 @@ export default function Home() {
         </section>
   
         {/* Section */}
-        <section className="pt-[110px] pb-[220px] relative ">
+        <section className="pt-[110px] pb-[220px] px-5 relative ">
           <svg
             viewBox="0 0 1920 1080"
             xmlns="http://www.w3.org/2000/svg"
@@ -570,7 +544,7 @@ export default function Home() {
           </svg>
           <div className="mx-auto container z-0 relative">
             <div className="text-center mx-auto max-w-2xl">
-              <p className="text-white text-5xl mt-3 font-bold">
+              <p className="text-white text-3xl sm:text-4xl md:text-5xl mt-3 font-bold">
                 Boost your productivity. Start using our app today.
               </p>
               <p className="mt-8 text-[20px] text-[#99a1af] font-medium">

@@ -3,7 +3,7 @@ export default function Footer(){
     
     return (
       <footer className="bg-[#fcfcfc]">
-        <div className="mx-auto container flex flex-wrap flex-col sm:flex-row max-w-7xl justify-between p-5 sm:p-16 lg:px-16">
+        <div className="mx-auto container flex flex-wrap flex-col sm:flex-row max-w-7xl justify-between px-5 py-16 sm:p-16 lg:px-16">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-8">
             <a href="#" className="">
               <img className="w-40 mb-4" src="/seasonedly-logo.png" alt="" />
@@ -17,30 +17,29 @@ export default function Footer(){
             <h2 className="font-bold mb-2.5">Links</h2>
             <ul className="flex flex-col flex-wrap sm:flex-row lg:flex-col">
               <li>
-                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:bg-gray-50">
+                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:scale-105 delay-75 duration-200 transition ease-linear">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:bg-gray-50">
+                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:scale-105 delay-75 duration-200 transition ease-linear">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:bg-gray-50">
+                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:scale-105 delay-75 duration-200 transition ease-linear">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:bg-gray-50">
+                <a href="#" className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:scale-105 delay-75 duration-200 transition ease-linear">
                   Blog
                 </a>
               </li>
               <li>
                 <a
                   href="#"
-                  className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:bg-gray-50"
-                >
+                  className="block rounded-lg px-3 py-2 text-sm/5 text-gray-900 hover:scale-105 delay-75 duration-200 transition ease-linear">
                   Contact
                 </a>
               </li>
@@ -96,7 +95,7 @@ export default function Footer(){
           </div>
         </div>
         {/* Copyright */}
-        <div className="text-center p-5 border border-t-[#CBD5E0]">
+        <div className="text-center p-5 border-t-1 border-t-[#CBD5E0]">
             <p>© 2025 Copyright by Seasonedly.com. All rights reserved.</p>
         </div>
       </footer>
